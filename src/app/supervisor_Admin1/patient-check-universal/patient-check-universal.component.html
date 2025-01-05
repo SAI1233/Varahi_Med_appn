@@ -1,0 +1,61 @@
+<div class="form-container">
+  <h3 class="form-header">Patient Check-Universal</h3>
+  
+  <!-- Filter Section -->
+  <div class="filter-section">
+    <input type="text" placeholder="Filter by Patient Name" [(ngModel)]="filter.patientName" (ngModelChange)="applyFilter()" />
+    <input type="text" placeholder="Filter by EMR Number" [(ngModel)]="filter.emrNumber" (ngModelChange)="applyFilter()" />
+    <input type="text" placeholder="Filter by Mobile Number" [(ngModel)]="filter.mobileNumber" (ngModelChange)="applyFilter()" />
+    <input type="date" placeholder="Filter by Admission Date" [(ngModel)]="filter.admissionDate" (ngModelChange)="applyFilter()" />
+    <input type="text" placeholder="Filter by Patient Type" [(ngModel)]="filter.patientType" (ngModelChange)="applyFilter()" />
+  </div>
+
+  <!-- Table Section -->
+  <table mat-table [dataSource]="dataSource">
+    <ng-container matColumnDef="sNo">
+      <th mat-header-cell *matHeaderCellDef style="background-color: #00214e;color: white;">S.No</th>
+      <td mat-cell *matCellDef="let element">{{element.sNo}}</td>
+    </ng-container>
+    <ng-container matColumnDef="emrNumber">
+      <th mat-header-cell *matHeaderCellDef style="background-color: #00214e;color: white;">EMR Number</th>
+      <td mat-cell *matCellDef="let element">{{element.emrNumber}}</td>
+    </ng-container>
+    <ng-container matColumnDef="patientName">
+      <th mat-header-cell *matHeaderCellDef style="background-color: #00214e;color: white;">Patient Name</th>
+      <td mat-cell *matCellDef="let element">{{element.patientName}}</td>
+    </ng-container>
+    <ng-container matColumnDef="wardNumber">
+      <th mat-header-cell *matHeaderCellDef style="background-color: #00214e;color: white;">Ward Number</th>
+      <td mat-cell *matCellDef="let element">{{element.wardNumber}}</td>
+    </ng-container>
+    <ng-container matColumnDef="department">
+      <th mat-header-cell *matHeaderCellDef style="background-color: #00214e;color: white;">Department</th>
+      <td mat-cell *matCellDef="let element">{{element.department}}</td>
+    </ng-container>
+    <ng-container matColumnDef="status">
+      <th mat-header-cell *matHeaderCellDef style="background-color: #00214e;color: white;">Status</th>
+      <td mat-cell *matCellDef="let element">{{element.status}}</td>
+    </ng-container>
+    <ng-container matColumnDef="mobileNumber">
+      <th mat-header-cell *matHeaderCellDef style="background-color: #00214e;color: white;">Mobile Number</th>
+      <td mat-cell *matCellDef="let element">{{element.mobileNumber}}</td>
+    </ng-container>
+    <ng-container matColumnDef="admissionDate">
+      <th mat-header-cell *matHeaderCellDef style="background-color: #00214e;color: white;">Admission Date</th>
+      <td mat-cell *matCellDef="let element">{{element.admissionDate}}</td>
+    </ng-container>
+    <ng-container matColumnDef="patientType">
+      <th mat-header-cell *matHeaderCellDef style="background-color: #00214e;color: white;">Patient Type</th>
+      <td mat-cell *matCellDef="let element">{{element.patientType}}</td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+
+  <mat-paginator [length]="dataSource.data.length"
+               [pageSize]="pageSize"
+               [pageSizeOptions]="pageSizeOptions">
+</mat-paginator>
+
+</div>

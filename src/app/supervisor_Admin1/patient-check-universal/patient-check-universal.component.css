@@ -1,0 +1,45 @@
+.form-container {
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form Header */
+  .form-header {
+    color: #00214e;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  
+  
+  table {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .mat-column-sNo, .mat-column-emrNumber, .mat-column-patientName, .mat-column-wardNumber, .mat-column-department, .mat-column-status, .mat-column-mobileNumber, .mat-column-admissionDate, .mat-column-patientType {
+    text-align: center;
+  }
+ 
+
+
+  .filter-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Space between inputs */
+    margin-bottom: 20px;
+  }
+  
+  .filter-section input {
+    width: calc(33.33% - 10px); /* Adjust width for multiple inputs */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+    border-color: #082256;
+    background-color: #dfe7f5;
+  }

@@ -1,0 +1,10 @@
+*{ font-family: 'roboto arial sanserif' !important;
+    font-size: 1em;}
+html, body { height: 100%; }
+body { margin: 0; font-family: 'roboto arial sanserif';font-size: 1em;}
+
+
+
+:root{
+    --margin-:2%;
+}

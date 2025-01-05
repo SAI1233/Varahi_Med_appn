@@ -1,0 +1,114 @@
+<div class="header-container" *ngIf="this.clientname !== ''" >
+  <!-- Logo and Search -->
+  <div class="header-top">
+    <div class="logo">
+      <h3><i>Varahi HealthCare <br>Technologies</i></h3>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Search" />
+      <button class="search-button">Search</button>
+    </div>
+    <div class="admin" style="display: flex;">
+      <div style="margin-top: 5px; ">
+      <div><i>Supervisor</i></div>
+      <div style="font-weight: bold;">Admin 1</div>
+      </div>
+      <img style="margin-top: 10px;" src="../assets/images/DPpic.jpg" alt="Admin" class="admin-icon" />
+    </div>
+  </div>
+
+  <!-- Menu Items -->
+
+  
+  <div class="menu-container">
+    <div class="menu-item">
+      <div class="card">
+        <img src="../assets/images/icons8-appointment-100.png" style="width: 3.5rem; height: 3.5rem;">
+      </div>
+      <div class="name">Appointment</div>
+    </div>
+    <div class="menu-item">
+      <div class="card" >
+        <a href="/New_Registration" routerLinkActive="active" style="cursor: pointer;">
+          <img src="../assets/images/icons8-google-forms-new-logo-100.png" style="width: 3rem; height: 3rem;">
+        </a>
+      </div>
+      <div class="name">New Registration</div>
+    </div>
+    <div class="menu-item">
+      <div class="card">
+        <img src="../assets/images/icons8-cash-9611.png" style="width: 3rem; height: 3rem;">
+      </div>
+      <div class="name">Bill Out</div>
+    </div>
+    <div class="menu-item">
+      <div class="card">
+        <a href="/Patient_Check_Universal" routerLinkActive="active" style="cursor: pointer;">
+          <img src="../assets/images/icons8-badge-100 (1).png" style="width: 3rem; height: 3rem;">
+        </a>
+      </div>
+      <div class="name">Patient Check</div>
+    </div>
+    <div class="menu-item">
+      <div class="card">
+        <a href="/Doctor_Availability_Check" routerLinkActive="active" style="cursor: pointer;">
+        <img src="../assets/images/icons8-doctor-10011.png" style="width: 3rem; height: 3rem;">
+      </a>
+
+      </div>
+      <div class="name">Doctor Availability</div>
+    </div>
+    <div class="menu-item">
+      <div class="card">
+        <a href="/Bood_Bank" routerLinkActive="active" style="cursor: pointer;">
+          <img src="../assets/images/icons8-drop-100.png" style="width: 3rem; height: 3rem;">
+        </a>
+      </div>
+      <div class="name">Blood Bank</div>
+    </div>
+    <div class="menu-item">
+      <div class="card">
+        <img src="../assets/images/icons8-clipboard-96.png" style="width: 3rem; height: 3rem;">
+      </div>
+      <div class="name">Discharge Summary</div>
+    </div>
+    <div class="menu-item">
+      <div class="card">
+        <img src="../assets/images/icons8-business-100.png" style="width: 2.5rem; height: 2.5rem;">
+      </div>
+      <div class="name">Insurance Claim</div>
+    </div>
+    <div class="menu-item">
+      <div class="card">
+        <a href="/Bed_Availability" routerLinkActive="active" style="cursor: pointer;">
+        <img src="../assets/images/icons8-empty-bed-10011.png" style="width: 2.5rem; height: 3rem;">
+        </a>
+      </div>
+      <div class="name">Bed Availability</div>
+    </div>
+    <div class="menu-item">
+      <div class="card">
+        <a href="/Case_Transfer" routerLinkActive="active" style="cursor: pointer;">
+          <img src="../assets/images/icons8-circular-arrows-100 (1).png" style="width: 3rem; height: 3rem;">
+        </a>
+      </div>
+      <div class="name">Case Transfer</div>
+    </div>
+  </div>
+  
+  
+
+</div>
+
+
+<router-outlet></router-outlet>
+
+
+<div *ngIf="this.clientname !== ''">
+<footer class="footer" style="text-align: center; padding: 20px;  position: relative;margin-top: 20px;">
+  <div class="footer-content">
+    &commat; {{ Year | date: 'yyyy' }} Varahi HealthCare Technologies
+  </div>
+</footer>
+</div>
+

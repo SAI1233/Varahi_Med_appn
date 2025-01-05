@@ -1,0 +1,99 @@
+<div class="form-container">
+    <!-- Header -->
+    <h3 class="form-header">New Registration - General</h3>
+
+    <div class="card">
+      <span style="color: #082256;font-size: 16px;text-align: center;font-weight: 500;position: absolute;margin-top: -80vh;">BASIC INFORMATION</span>
+
+       <!-- Form Content -->
+    <form (ngSubmit)="onSubmit()">
+      <table style="width: 100%; border-spacing: 10px;">
+        <tr></tr>
+
+        <tr>
+          <td><label for="firstName">First Name:</label></td>
+          <td><input type="text" id="firstName" name="firstName" style="width: 100%;"></td>
+          <td><label for="lastName">Last Name:</label></td>
+          <td><input type="text" id="lastName" name="lastName" style="width: 100%;"></td>
+          <td><label for="date">Date:</label></td>
+          <td><input type="date" id="date" name="date" style="width: 100%;"></td>
+        </tr>
+        <tr>
+          <td><label for="gender">Gender:</label></td>
+          <td><input type="text" id="gender" name="gender" style="width: 100%;"></td>
+          <td><label for="height">Height:</label></td>
+          <td><input type="text" id="height" name="height" style="width: 100%;"></td>
+          <td><label for="weight">Weight:</label></td>
+          <td><input type="text" id="weight" name="weight" style="width: 100%;"></td>
+        </tr>
+        <tr>
+          <td><label for="maritalStatus">Marital Status:</label></td>
+          <td><input type="text" id="maritalStatus" name="maritalStatus" style="width: 100%;"></td>
+          <td><label for="bodyTemp">Body Temperature:</label></td>
+          <td><input type="text" id="bodyTemp" name="bodyTemp" style="width: 100%;"></td>
+          <td><label for="pulse">Pulse:</label></td>
+          <td><input type="text" id="pulse" name="pulse" style="width: 100%;"></td>
+        </tr>
+        <tr>
+          <td><label for="currentMedi">Current Medical History:</label></td>
+          <td><input type="text" id="currentMedi" name="currentMedi" style="width: 100%;"></td>
+          <td><label for="mobNum">Mobile Number:</label></td>
+          <td><input type="tel" id="mobNum" name="mobNum" style="width: 100%;"></td>
+          <td><label for="email">Email Id:</label></td>
+          <td><input type="email" id="email" name="email" style="width: 100%;"></td>
+        </tr>
+        <tr>
+          <td><label for="address">Address:</label></td>
+          <td><input type="text" id="address" name="address" style="width: 100%;"></td>
+          <td><label for="goverIden">Government Identification Number:</label></td>
+          <td><input type="text" id="goverIden" name="goverIden" style="width: 100%;"></td>
+          <td><label for="photo">Photo:</label></td>
+          <td><input type="file" id="photo" name="photo" style="width: 100%;"></td>
+        </tr>
+
+        <tr></tr>
+
+          <!-- Add this row after the Photo row -->
+        <tr>
+          <td colspan="6" style="color: #082256; font-size: 16px; text-align: center; font-weight: 500;">
+            EMERGENCY CONTACT
+          </td>
+        </tr>
+
+
+        <tr></tr>
+
+
+        <tr>
+          <td><label for="emgncyfirstname">First Name:</label></td>
+          <td><input type="text" id="emgncyfirstname" name="emgncyfirstname" style="width: 100%;"></td>
+          <td><label for="emgncylastname">Last Name:</label></td>
+          <td><input type="text" id="emgncylastname" name="emgncylastname" style="width: 100%;"></td>
+          <td><label for="emgncyrelation">Relation:</label></td>
+          <td><input type="text" id="emgncyrelation" name="emgncyrelation" style="width: 100%;"></td>
+        </tr>
+
+        <tr>
+          <td><label for="emgncycontact">Contact Number:</label></td>
+          <td><input type="text" id="emgncycontact" name="emgncycontact" style="width: 100%;"></td>
+
+        </tr>
+
+      </table>
+      <div class="registerButton">
+        <button type="submit" class="btn btn-primary">Register</button>
+
+      </div>
+
+ 
+      
+
+    </form>
+
+
+    </div>
+
+
+
+  </div>
+  

@@ -1,0 +1,47 @@
+<div class="container">
+  <div class="card">
+    <div class="card-content">
+      <div class="left-section">
+        <img src="../../../assets/images/icons8-user-icon-100.png" alt="User Icon" class="user-icon">
+        <label class="user-name"><strong>Dummy Name</strong></label>
+
+      </div>
+      <span class="divider-vertical"></span>
+      <div class="right-section details">
+        <p><strong>EMR Number:</strong> <span id="emr-number">1234567890</span></p>
+        <p><strong>Age:</strong> 30</p>
+        <p><strong>Mobile Number:</strong> +1234567890</p>
+        <p><strong>Address:</strong> 123, Dummy Street, City</p>
+        <p><strong>Emergency Contact Name:</strong> John Doe</p>
+        <p><strong>Emergency Phone Number:</strong> +0987654321</p>
+      </div>
+    </div>
+
+
+    <div class="divider-bottom">
+      <ngx-barcode6
+        class="barcode-container"
+        [bc-format]="'CODE128'"
+        [bc-value]="emrNumber"
+        [bc-display-value]="false"
+        [bc-width]="2" 
+        [bc-height]="30" 
+      ></ngx-barcode6>
+    </div>
+    
+    
+  </div>
+
+  <div class="section">
+    <button type="button" class="btn btn-primary">Book An Appointment</button>
+    <button type="button" class="btn btn-primary">Book For Medical Check Up</button>
+    <span class="divider"></span>
+
+    <button type="button" class="btn btn-primary">New Insurance Book</button>
+    <button type="button" class="btn btn-primary">Be a Donor</button>
+  </div>
+</div>
+
+<mat-dialog-actions align="center">
+  <button mat-button mat-dialog-close class="btn btn-primary" style="color: white;width: 10vw;">Close</button>
+</mat-dialog-actions>

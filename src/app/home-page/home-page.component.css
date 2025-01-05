@@ -1,0 +1,94 @@
+/* .container {
+    display: flex;
+    width: 98%;
+    gap: 10px; 
+    margin: var(--margin-);
+  }
+  
+  .inner-container {
+    display: inline;          
+    gap: 10px;              
+    flex: 0 0 30%;         
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px; 
+    margin-top: 20px; 
+}
+
+.card-block {
+    height: 50px; 
+    background-color: #ccc; 
+    border-radius: 4px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+
+  .card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: auto;
+    background-color: #f2f2f2;
+  }
+  
+  
+
+  
+  .card-70 {
+    flex: 0 0 65%; 
+  }
+  
+ 
+  
+   */
+
+
+
+
+
+   .container {
+    display: flex;
+    width: 98%;
+    gap: 0.625rem;  /* 10px to rem (assuming 1rem = 16px) */
+    margin: var(--margin-);
+  }
+  
+  .inner-container {
+    display: inline;          /* Aligns the first two cards horizontally */
+    gap: 0.625rem;            /* 10px to rem */
+    flex: 0 0 30%;            /* Ensures the inner container takes up 30% of the space */
+  }
+  
+  .card-content {
+    display: flex;
+    flex-direction: column; /* Align blocks vertically */
+    gap: 0.9375rem;          /* 15px to rem */
+    margin-top: 1.25rem;     /* 20px to rem */
+  }
+  
+  /* Individual block styling */
+  .card-block {
+    height: 3.125rem;        /* 50px to rem */
+    background-color: #ccc;  /* Grey background */
+    border-radius: 0.25rem;  /* 4px to rem */
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1); /* Light shadow */
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    padding: 1.25rem;         /* 20px to rem */
+    border-radius: 0;         /* No border-radius */
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1); /* Light shadow */
+    height: auto;
+    background-color: #f2f2f2;
+  }
+  
+  .card-70 {
+    flex: 0 0 65%; /* Takes 65% of the width */
+  }
+  
+ 

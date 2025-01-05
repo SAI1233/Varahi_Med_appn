@@ -1,0 +1,54 @@
+<!-- <<p>loginpage works!</p>
+
+<a href="/Home" routerLinkActive="active" style="cursor: pointer;">
+    <button> submit</button></a> -->
+
+<div style="height: 14vh;" class="header-top">
+    <div class="logo">
+      <h1><i>Varahi <br> HealthCare <br>Technologies</i></h1>
+    </div>
+</div>
+
+
+<div class="login-container">
+    <img src="../../assets/images/topsphere-media-WxRd7byFxs4-unsplash.jpg" class="background-image">
+    <div style="margin-left: 50vw;  border-radius: 3vw;" class="login-card">
+      <h2 class="login-header">User Login</h2>
+      <form style="width: 30vw;" >
+
+        <mat-form-field appearance="outline" style="width: 100%;">
+          <mat-label>Username</mat-label>
+          <input matInput placeholder="Enter username" id="username">
+        </mat-form-field>
+
+        <mat-form-field appearance="outline" style="width: 100%; margin-top: 1rem;">
+          <mat-label>Password</mat-label>
+          <input matInput type="password" placeholder="Enter password" id="password">
+        </mat-form-field>
+        
+            <!-- <button href="/Home" routerLinkActive="active" style="width: 10vw;" type="submit" class="login-button" >Login</button> -->
+
+            <!-- <a href="/Home" routerLinkActive="active" style=" text-decoration: none;"> -->
+                <!-- <div style="background: #00214e; width: 10vw;height: 6vh; border-radius: 0.5vw; margin-left: 10vw;pad: 0.5vh;">
+                 <a href="/Home" routerLinkActive="active"  style="text-decoration: none; color: white; font-weight: 400;">Login</a>
+                </div> -->
+
+                <div style="background: #00214e; width: 10vw; height: 6vh; border-radius: 0.5vw; margin-left: 10vw; display: flex; justify-content: center; align-items: center;cursor: pointer;">
+                  <a href="/Home" routerLinkActive="active" style="text-decoration: none; color: white; font-weight: 400;">Login</a>
+                </div>
+                
+               <!-- </a> -->
+
+            
+            <!-- <a href="/Home" routerLinkActive="active" class="login-button">Login</a> -->
+        
+        </form>
+    </div>
+  </div>
+
+
+<footer class="footer" style="text-align: center; padding:  1.25rem;  position: relative;margin-top:  1.25rem;">
+    <div class="footer-content">
+      &commat; {{ Year | date: 'yyyy' }} Varahi HealthCare Technologies
+    </div>
+  </footer>

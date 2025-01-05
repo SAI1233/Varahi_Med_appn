@@ -1,0 +1,63 @@
+<div class="form-container">
+    <h3 class="form-header">Case Transfer - Universal</h3>
+    
+    <!-- Filter Section -->
+    <div class="card">
+
+        <form (ngSubmit)="onSubmit()">
+            <table style="width: 100%; border-spacing: 10px;">
+              <tr></tr>
+      
+              <tr>
+                <td><label for="emrNumber">EMR Number:</label></td>
+                <td><input type="text" id="emrNumber" name="emrNumber" style="width: 100%;"></td>
+                <td><label for="department">Department:</label></td>
+                <td><input type="text" id="department" name="department" style="width: 100%;"></td>
+                <td><label for="hospitalName">Hospital Name:</label></td>
+                <td><input type="text" id="hospitalName" name="hospitalName" style="width: 100%;"></td>
+              </tr>
+ 
+      
+              <tr></tr>
+      
+              <tr>
+                <td><label for="transferSummary">Transfer Summary:</label></td>
+                <!-- Set Transfer Summary to take up 80% width -->
+                <td colspan="4">
+                  <input type="text" id="transferSummary" name="transferSummary" style="width: 100%;">
+                </td>
+                <!-- Register button aligned at the end -->
+                <td style="text-align: right;">
+                  <button type="submit" class="btn btn-primary">Transfer</button>
+                </td>
+              </tr>
+              <tr></tr>
+
+      
+            </table>
+     
+      
+       
+            
+      
+          </form>
+      
+    </div>
+  
+
+    <div class="card1">
+ 
+        <h3 style="color: #00214e;text-align: center;">CASE TRANSFER RECEIPT</h3>
+
+        <div class="print-container">
+            <button type="button" class="btn btn-primary">Print</button>
+          </div>
+
+
+      
+    </div>
+  
+  
+  
+  </div>
+  
