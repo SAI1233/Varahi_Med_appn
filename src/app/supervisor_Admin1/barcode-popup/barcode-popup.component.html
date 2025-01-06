@@ -18,16 +18,26 @@
     </div>
 
 
-    <div class="divider-bottom">
+    <!-- <div class="divider-bottom">
+      <div class="barcode">
       <ngx-barcode6
         class="barcode-container"
         [bc-format]="'CODE128'"
         [bc-value]="emrNumber"
         [bc-display-value]="false"
         [bc-width]="2" 
-        [bc-height]="30" 
+        [bc-height]="30"
       ></ngx-barcode6>
     </div>
+    </div> -->
+
+
+    <div class="divider-bottom">
+      <div class="barcode">
+        <svg id="barcode"></svg>
+      </div>
+    </div>
+    
     
     
   </div>
